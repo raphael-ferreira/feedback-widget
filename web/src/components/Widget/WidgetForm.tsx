@@ -8,6 +8,16 @@ export function WidgetForm() {
 
         <CloseButton title="Fechar formulário de feedback" />
       </header>
+
+      <footer className="text-xs text-neutral-400">
+        Desenvolvido por{" "}
+        <a
+          className="underline underline-offset-2"
+          href="https://github.com/raphael-ferreira"
+        >
+          Raphael Ferreira
+        </a>
+      </footer>
     </div>
   );
 }
