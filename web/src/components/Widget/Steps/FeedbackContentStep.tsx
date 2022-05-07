@@ -9,11 +9,13 @@ import { FeedbackType, feedbackTypes } from "../WidgetForm";
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
   onFeedbackReset: () => void;
+  onFeedbackSent: () => void;
 }
 
 export function FeedbackContentStep({
   feedbackType,
   onFeedbackReset,
+  onFeedbackSent,
 }: FeedbackContentStepProps) {
   const [comment, setComment] = useState<string>("");
   const [screenshot, setScreenshot] = useState<string | null>(null);
@@ -24,6 +26,8 @@ export function FeedbackContentStep({
     event?.preventDefault();
 
     console.log({ comment, screenshot });
+
+    onFeedbackSent();
   }
   return (
     <>
