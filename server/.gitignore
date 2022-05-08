@@ -24,3 +24,9 @@ dist-ssr
 *.sw?
 
 .env
+/coverage.data
+/coverage/
+.coverage
+.testrepository/
+cover/
+.coverage*
