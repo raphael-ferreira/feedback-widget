@@ -1,3 +1,5 @@
+import "react-native-gesture-handler";
+
 import { View } from "react-native";
 
 import { StatusBar } from "expo-status-bar";
@@ -31,9 +33,9 @@ export default function App() {
         justifyContent: "center",
       }}
     >
-      <Widget />
-
       <StatusBar style="light" backgroundColor="transparent" translucent />
+
+      <Widget />
     </View>
   );
 }
