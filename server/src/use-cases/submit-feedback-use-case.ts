@@ -25,7 +25,7 @@ export class SubmitFeedbackUseCase {
     }
 
     if (screenshot && !screenshot.startsWith("data:image/png;base64")) {
-      throw new Error("Invalid screenshow format.");
+      throw new Error("Invalid screenshot format.");
     }
 
     await this.feedbacksRepository.create({
