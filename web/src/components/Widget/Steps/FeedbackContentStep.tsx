@@ -5,6 +5,7 @@ import { CloseButton } from "../../Common/CloseButton";
 import { ScreenshotButton } from "../../Common/ScreenshotButton";
 
 import { FeedbackType, feedbackTypes } from "../WidgetForm";
+import { api } from "../../../services/api";
 
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
@@ -22,10 +23,14 @@ export function FeedbackContentStep({
 
   const feedbackTypeInfo = feedbackTypes[feedbackType];
 
-  function handleSubmitFeedback(event: FormEvent) {
+  async function handleSubmitFeedback(event: FormEvent) {
     event?.preventDefault();
 
-    console.log({ comment, screenshot });
+    await api.post("/feedbacks", {
+      type: feedbackType,
+      comment,
+      screenshot,
+    });
 
     onFeedbackSent();
   }
