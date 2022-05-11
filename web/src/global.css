@@ -13,7 +13,7 @@ body {
 .comment-area {
   @apply min-w-[304px] 
     w-full 
-    min-h-[112px]
+    min-h-[96.2px]
     text-sm 
 
     placeholder-light-text-secondary

@@ -14,7 +14,7 @@ export function FeedbackSuccessStep({
         <CloseButton title="Fechar formulário de feedback" />
       </header>
 
-      <div className="flex flex-col items-center py-10 w-[304px]">
+      <div className="flex flex-col items-center pt-6 pb-10 w-[304px]">
         <img src={checkImageUrl} alt="Imagem de sucesso" />
 
         <span className="text-xl mt-2">Agradecemos o feedback!</span>
