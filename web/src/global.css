@@ -3,5 +3,77 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#09090A] text-zinc-100;
+  @apply bg-light-primary 
+    dark:bg-dark-primary
+
+    text-light-text-primary 
+    dark:text-dark-text-primary;
+}
+
+.comment-area {
+  @apply min-w-[304px] 
+    w-full 
+    min-h-[112px]
+    text-sm 
+
+    placeholder-light-text-secondary
+    dark:placeholder-dark-text-secondary 
+
+    text-light-text-primary 
+    dark:text-dark-text-primary 
+
+    border-light-stroke
+    dark:border-dark-stroke
+
+    bg-transparent 
+    rounded-md 
+    
+    focus:border-brand-500 
+    focus:ring-brand-500
+    focus:ring-1
+    focus:outline-none 
+    
+    resize-none 
+
+    scrollbar-thumb-light-surface-hover
+    dark:scrollbar-thumb-dark-surface-hover
+
+    scrollbar-track-transparent 
+    scrollbar-thin;
+}
+
+.submit-button {
+  @apply p-2 
+
+    bg-brand-500 
+
+    rounded-md 
+    border-transparent 
+    
+    flex-1 
+    flex 
+    justify-center 
+    items-center 
+    
+    text-sm 
+    text-white
+    
+    hover:bg-brand-300 
+    
+    focus:outline-none 
+    focus:ring-2 
+    focus:ring-offset-2 
+    focus:ring-brand-500 
+
+    focus:ring-offset-light-surface-primary
+    dark:focus:ring-offset-dark-surface-primary
+    
+    transition-colors 
+    
+    disabled:opacity-50 
+    disabled:hover:bg-brand-500;
+}
+
+.outline-purple {
+  @apply rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-light-surface-primary dark:focus:ring-offset-dark-surface-primary focus:ring-brand-500;
 }

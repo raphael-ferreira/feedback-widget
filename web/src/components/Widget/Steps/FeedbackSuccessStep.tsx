@@ -15,14 +15,14 @@ export function FeedbackSuccessStep({
       </header>
 
       <div className="flex flex-col items-center py-10 w-[304px]">
-        <img src={checkImageUrl} alt={"Imagem de sucesso"} />
+        <img src={checkImageUrl} alt="Imagem de sucesso" />
 
         <span className="text-xl mt-2">Agradecemos o feedback!</span>
 
         <button
           type="button"
           onClick={onFeedbackReset}
-          className="py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 disabled:opacity-50"
+          className="py-2 px-6 mt-6 bg-light-surface-secondary dark:bg-dark-surface-secondary rounded-md border-transparent text-sm leading-6 hover:bg-light-surface-hover dark:hover:bg-dark-surface-hover transition-colors outline-purple"
         >
           Quero enviar outro
         </button>
